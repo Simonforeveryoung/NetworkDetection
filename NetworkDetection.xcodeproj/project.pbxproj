@@ -8,15 +8,18 @@
 
 /* Begin PBXBuildFile section */
 		3DDAE9341554509F00C97294 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DDAE9331554509F00C97294 /* Foundation.framework */; };
-		3DDAE93A1554509F00C97294 /* NetworkDetection.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DDAE9391554509F00C97294 /* NetworkDetection.m */; };
+		3DDAE942155477E500C97294 /* HelloWorld.h in Headers */ = {isa = PBXBuildFile; fileRef = 3DDAE940155477E500C97294 /* HelloWorld.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3DDAE943155477E500C97294 /* HelloWorld.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DDAE941155477E500C97294 /* HelloWorld.m */; };
+		3DDAE94415547CF000C97294 /* NetworkDetection.h in Headers */ = {isa = PBXBuildFile; fileRef = 3DDAE9381554509F00C97294 /* NetworkDetection.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		3DDAE9301554509F00C97294 /* libNetworkDetection.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libNetworkDetection.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		3DDAE9331554509F00C97294 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		3DDAE9371554509F00C97294 /* NetworkDetection-Prefix.pch */ = {isa = PBXFileReference; path = "NetworkDetection-Prefix.pch"; sourceTree = "<group>"; };
-		3DDAE9381554509F00C97294 /* NetworkDetection.h */ = {isa = PBXFileReference; path = NetworkDetection.h; sourceTree = "<group>"; };
-		3DDAE9391554509F00C97294 /* NetworkDetection.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NetworkDetection.m; sourceTree = "<group>"; };
+		3DDAE9371554509F00C97294 /* NetworkDetection-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NetworkDetection-Prefix.pch"; sourceTree = "<group>"; };
+		3DDAE9381554509F00C97294 /* NetworkDetection.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NetworkDetection.h; sourceTree = "<group>"; };
+		3DDAE940155477E500C97294 /* HelloWorld.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HelloWorld.h; sourceTree = "<group>"; };
+		3DDAE941155477E500C97294 /* HelloWorld.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HelloWorld.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,8 +63,9 @@
 			isa = PBXGroup;
 			children = (
 				3DDAE9381554509F00C97294 /* NetworkDetection.h */,
-				3DDAE9391554509F00C97294 /* NetworkDetection.m */,
 				3DDAE9361554509F00C97294 /* Supporting Files */,
+				3DDAE940155477E500C97294 /* HelloWorld.h */,
+				3DDAE941155477E500C97294 /* HelloWorld.m */,
 			);
 			path = NetworkDetection;
 			sourceTree = "<group>";
@@ -81,6 +85,8 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3DDAE942155477E500C97294 /* HelloWorld.h in Headers */,
+				3DDAE94415547CF000C97294 /* NetworkDetection.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -135,7 +141,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3DDAE93A1554509F00C97294 /* NetworkDetection.m in Sources */,
+				3DDAE943155477E500C97294 /* HelloWorld.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -192,6 +198,7 @@
 				GCC_PREFIX_HEADER = "NetworkDetection/NetworkDetection-Prefix.pch";
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "include/$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 			};
 			name = Debug;
@@ -204,6 +211,7 @@
 				GCC_PREFIX_HEADER = "NetworkDetection/NetworkDetection-Prefix.pch";
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "include/$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 			};
 			name = Release;

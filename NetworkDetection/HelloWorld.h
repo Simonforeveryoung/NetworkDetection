@@ -1,5 +1,5 @@
 //
-//  NetworkDetection.h
+//  HelloWorld.h
 //  NetworkDetection
 //
 //  Created by SIMON YOUNG on 5/4/12.
@@ -8,4 +8,8 @@
 
 #import <Foundation/Foundation.h>
 
-#import <NetworkDetection/HelloWorld.h>
+@interface HelloWorld : NSObject
+
+- (NSString *)Hello;
+
+@end

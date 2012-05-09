@@ -8,6 +8,4 @@
 
 #import <Foundation/Foundation.h>
 
-#import <NetworkDetection/HelloWorld.h>
-
-#import <NetworkDetection/NetworkReachability.h>
+#import <NetworkDetection/NetworkChecker.h>

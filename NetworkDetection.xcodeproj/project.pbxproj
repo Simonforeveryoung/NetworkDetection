@@ -8,22 +8,22 @@
 
 /* Begin PBXBuildFile section */
 		3DCD44F3155B157A00C9F4F1 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DCD44F2155B157A00C9F4F1 /* SystemConfiguration.framework */; };
+		3DCD451B155B346A00C9F4F1 /* NetworkChecker.h in Headers */ = {isa = PBXBuildFile; fileRef = 3DCD4519155B346A00C9F4F1 /* NetworkChecker.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3DCD451C155B346A00C9F4F1 /* NetworkChecker.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DCD451A155B346A00C9F4F1 /* NetworkChecker.m */; };
 		3DDAE9341554509F00C97294 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DDAE9331554509F00C97294 /* Foundation.framework */; };
-		3DDAE942155477E500C97294 /* HelloWorld.h in Headers */ = {isa = PBXBuildFile; fileRef = 3DDAE940155477E500C97294 /* HelloWorld.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		3DDAE943155477E500C97294 /* HelloWorld.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DDAE941155477E500C97294 /* HelloWorld.m */; };
 		3DDAE94415547CF000C97294 /* NetworkDetection.h in Headers */ = {isa = PBXBuildFile; fileRef = 3DDAE9381554509F00C97294 /* NetworkDetection.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		3DDAE9801555141300C97294 /* NetworkReachability.h in Headers */ = {isa = PBXBuildFile; fileRef = 3DDAE97E1555141300C97294 /* NetworkReachability.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3DDAE9801555141300C97294 /* NetworkReachability.h in Headers */ = {isa = PBXBuildFile; fileRef = 3DDAE97E1555141300C97294 /* NetworkReachability.h */; settings = {ATTRIBUTES = (); }; };
 		3DDAE9811555141300C97294 /* NetworkReachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DDAE97F1555141300C97294 /* NetworkReachability.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		3DCD44F2155B157A00C9F4F1 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		3DCD4519155B346A00C9F4F1 /* NetworkChecker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NetworkChecker.h; path = ../NetworkChecker.h; sourceTree = "<group>"; };
+		3DCD451A155B346A00C9F4F1 /* NetworkChecker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NetworkChecker.m; path = ../NetworkChecker.m; sourceTree = "<group>"; };
 		3DDAE9301554509F00C97294 /* libNetworkDetection.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libNetworkDetection.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		3DDAE9331554509F00C97294 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		3DDAE9371554509F00C97294 /* NetworkDetection-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NetworkDetection-Prefix.pch"; sourceTree = "<group>"; };
 		3DDAE9381554509F00C97294 /* NetworkDetection.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NetworkDetection.h; sourceTree = "<group>"; };
-		3DDAE940155477E500C97294 /* HelloWorld.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HelloWorld.h; sourceTree = "<group>"; };
-		3DDAE941155477E500C97294 /* HelloWorld.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HelloWorld.m; sourceTree = "<group>"; };
 		3DDAE97E1555141300C97294 /* NetworkReachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetworkReachability.h; sourceTree = "<group>"; };
 		3DDAE97F1555141300C97294 /* NetworkReachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NetworkReachability.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -70,12 +70,12 @@
 		3DDAE9351554509F00C97294 /* NetworkDetection */ = {
 			isa = PBXGroup;
 			children = (
+				3DCD4519155B346A00C9F4F1 /* NetworkChecker.h */,
+				3DCD451A155B346A00C9F4F1 /* NetworkChecker.m */,
 				3DDAE9381554509F00C97294 /* NetworkDetection.h */,
-				3DDAE9361554509F00C97294 /* Supporting Files */,
-				3DDAE940155477E500C97294 /* HelloWorld.h */,
-				3DDAE941155477E500C97294 /* HelloWorld.m */,
-				3DDAE97F1555141300C97294 /* NetworkReachability.m */,
 				3DDAE97E1555141300C97294 /* NetworkReachability.h */,
+				3DDAE97F1555141300C97294 /* NetworkReachability.m */,
+				3DDAE9361554509F00C97294 /* Supporting Files */,
 			);
 			path = NetworkDetection;
 			sourceTree = "<group>";
@@ -95,9 +95,9 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3DDAE942155477E500C97294 /* HelloWorld.h in Headers */,
 				3DDAE94415547CF000C97294 /* NetworkDetection.h in Headers */,
 				3DDAE9801555141300C97294 /* NetworkReachability.h in Headers */,
+				3DCD451B155B346A00C9F4F1 /* NetworkChecker.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -152,8 +152,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3DDAE943155477E500C97294 /* HelloWorld.m in Sources */,
 				3DDAE9811555141300C97294 /* NetworkReachability.m in Sources */,
+				3DCD451C155B346A00C9F4F1 /* NetworkChecker.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

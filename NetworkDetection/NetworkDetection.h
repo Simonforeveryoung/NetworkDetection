@@ -10,4 +10,4 @@
 
 #import <NetworkDetection/HelloWorld.h>
 
-#import <NetworkDetection/NetworReachability.h>
+#import <NetworkDetection/NetworkReachability.h>

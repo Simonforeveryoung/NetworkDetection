@@ -11,7 +11,7 @@
 		3DDAE942155477E500C97294 /* HelloWorld.h in Headers */ = {isa = PBXBuildFile; fileRef = 3DDAE940155477E500C97294 /* HelloWorld.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		3DDAE943155477E500C97294 /* HelloWorld.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DDAE941155477E500C97294 /* HelloWorld.m */; };
 		3DDAE94415547CF000C97294 /* NetworkDetection.h in Headers */ = {isa = PBXBuildFile; fileRef = 3DDAE9381554509F00C97294 /* NetworkDetection.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		3DDAE9801555141300C97294 /* Reachability.h in Headers */ = {isa = PBXBuildFile; fileRef = 3DDAE97E1555141300C97294 /* Reachability.h */; };
+		3DDAE9801555141300C97294 /* Reachability.h in Headers */ = {isa = PBXBuildFile; fileRef = 3DDAE97E1555141300C97294 /* Reachability.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		3DDAE9811555141300C97294 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DDAE97F1555141300C97294 /* Reachability.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 /* End PBXBuildFile section */
 

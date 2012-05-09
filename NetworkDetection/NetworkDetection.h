@@ -9,3 +9,5 @@
 #import <Foundation/Foundation.h>
 
 #import <NetworkDetection/HelloWorld.h>
+
+#import <NetworkDetection/Reachability.h>
